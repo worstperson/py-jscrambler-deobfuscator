@@ -30,7 +30,6 @@ from transformers.remove_runtime_submodules import remove_runtime_submodules
 from transformers.fold_arrays import fold_arrays
 from transformers.propagate_aliases import propagate_aliases
 from transformers.propagate_runtime_globals import propagate_runtime_globals
-from transformers.eval_inline import eval_inline
 from transformers.rename_vars import rename_vars
 from transformers.propagate_runtime_aliases import propagate_runtime_aliases
 from transformers.inline_trap_functions import inline_trap_functions
