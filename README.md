@@ -1,4 +1,5 @@
-**py-jscrambler-deobfuscator** Deobfuscator for JScramblers Enterprise obfuscation (Covers most obfuscation techniques)
+**py-jscrambler-deobfuscator**
+Deobfuscator for JScrambler's Enterprise obfuscation written entirely in Python
 
 #### Credits
 Python port of the original https://github.com/Ciarands/jscrambler-deobfuscator
@@ -23,13 +24,13 @@ pip install esprima2 escodegen
 
 ## Usage
 
-Run the deobfuscator against the files in the samples folder with:
+Run the deobfuscator against files in the samples folder with:
 
 ```shell
 python3 deobfuscator.py
 ```
 
-Commented out in deobfuscator.py is the 'LLM identifier renaming' transformer. This is a slow pass, but worthwhile if you'd like much better identifier names. The following is what I tested with.
+Commented out in deobfuscator.py is the 'LLM identifier renaming' transformer. This is a slow pass, but worthwhile if you'd like much better identifier names. The following is what I tested with for example:
 
 ```shell
 OPENAI_API_KEY="none" ./llama-server \
