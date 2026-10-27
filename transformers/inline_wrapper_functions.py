@@ -170,7 +170,7 @@ def resolve_wrapper_aliases(session: Session) -> None:
     aliases = getattr(session, 'wrapper_aliases', None)
     if not aliases:
         return
-    runtime_object = session.runtime_object
+    runtime_object = getattr(session, 'runtime_object', None)
     if not runtime_object:
         return
 

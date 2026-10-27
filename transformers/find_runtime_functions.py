@@ -492,7 +492,7 @@ def classify_dual_methods(m1, sig1, m2, sig2):
 def find_runtime_functions(session: Session) -> None:
     print("--- Applying Transformer: find_runtime_functions ---")
 
-    runtime_object = session.runtime_object
+    runtime_object = getattr(session, 'runtime_object', None)
     if not runtime_object:
         print(" |-> No runtime object found.")
         return
