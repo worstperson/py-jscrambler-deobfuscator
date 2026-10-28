@@ -253,7 +253,7 @@ def fold_constants(session: Session) -> None:
         computed_count += 1
 
     print(
-        f"fold_constants: folded {folded_count} constant expression(s), "
+        f" |->  folded {folded_count} constant expression(s), "
         f"converted {computed_count} computed property access(es) to static."
     )
 
@@ -427,7 +427,7 @@ def dead_code_elimination(session: Session) -> None:
             removed_declarators += 1
 
     print(
-        f"dead_code_elimination: removed {removed_declarators} declarator(s), "
+        f" |-> removed {removed_declarators} declarator(s), "
         f"{removed_statements} dead statement(s), {removed_updates} dead update(s), "
         f"salvaged {salvaged_assigns} assignment(s), collapsed {collapsed_sequences} sequence(s)."
     )

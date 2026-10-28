@@ -360,6 +360,6 @@ def propagate_aliases(session) -> None:
             dropped_copies += 1
 
     print(
-        f"propagate_aliases: propagated {aliases_propagated} alias(es) "
+        f" |-> propagated {aliases_propagated} alias(es) "
         f"across {rewritten_reads} read site(s), dropped {dropped_copies} dead copy node(s)."
     )
